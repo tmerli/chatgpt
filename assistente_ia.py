@@ -1,7 +1,7 @@
 import openai
 
 # Certifique-se de ter a chave da API configurada
-openai.api_key = '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'
+openai.api_key = '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'
 
 response = openai.ChatCompletion.create(  # Corrigido para "ChatCompletion" com "C" maiúsculo
     model="gpt-4",  # Escolha o modelo
