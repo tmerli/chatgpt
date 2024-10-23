@@ -1,10 +1,9 @@
-
 import openai
 
 # Certifique-se de ter a chave da API configurada
 openai.api_key = 'org-dIJwVnOXt46CahkMknGoWQRU'
 
-response = openai.chat_completions.create(
+response = openai.ChatCompletion.create(  # Corrigido para "ChatCompletion" com "C" maiúsculo
     model="gpt-4",  # Escolha o modelo
     messages=[
         {"role": "system", "content": "Você é um assistente útil."},
